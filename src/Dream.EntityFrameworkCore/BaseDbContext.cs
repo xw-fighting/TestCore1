@@ -9,6 +9,7 @@ namespace Dream.EntityFrameworkCore
         public BaseDbContext(DbContextOptions<BaseDbContext> options) : base(options)
         {
 
+
         }
 
         public DbSet<Function> Function { get; set; }

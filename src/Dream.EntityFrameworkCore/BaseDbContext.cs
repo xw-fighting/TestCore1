@@ -8,7 +8,7 @@ namespace Dream.EntityFrameworkCore
     {
         public BaseDbContext(DbContextOptions<BaseDbContext> options) : base(options)
         {
-            s        
+                   
         }
 
         public DbSet<Function> Function { get; set; }

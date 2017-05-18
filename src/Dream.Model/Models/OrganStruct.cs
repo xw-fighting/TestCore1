@@ -13,7 +13,9 @@ namespace Dream.Model.Models
         public OrganStruct()
         {
             this.Role = new HashSet<Role>();
-            this.UserManageInfo = new HashSet<UserManageInfo>();
+            this.UserManageInfo1 = new HashSet<UserManageInfo>();
+            this.UserManageInfo2 = new HashSet<UserManageInfo>();
+            this.UserManageInfo3 = new HashSet<UserManageInfo>();
         }
         [Key]
         [MaxLength(40)]
@@ -57,9 +59,11 @@ namespace Dream.Model.Models
         public DateTime UpdateTime { get; set; }
         public virtual KeyValue KeyValue { get; set; }
         public virtual ICollection<Role> Role { get; set; }
-        public virtual ICollection<UserManageInfo> UserManageInfo { get; set; }
-
         public virtual ICollection<UserManageInfo> UserManageInfo1 { get; set; }
+
+        public virtual ICollection<UserManageInfo> UserManageInfo2 { get; set; }
+
+        public virtual ICollection<UserManageInfo> UserManageInfo3 { get; set; }
 
     }
 }

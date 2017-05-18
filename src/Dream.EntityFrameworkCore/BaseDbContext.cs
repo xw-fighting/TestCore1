@@ -29,6 +29,8 @@ namespace Dream.EntityFrameworkCore
         public DbSet<WorkFlowWorkNodes> WorkFlowWorkNodes { get; set; }
 
 
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Function>().ToTable("Function")
@@ -43,7 +45,12 @@ namespace Dream.EntityFrameworkCore
                 .HasForeignKey(o => o.CateId)
                 .OnDelete(Microsoft.EntityFrameworkCore.Metadata.DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<PermissList>().ToTable("PermissList");
+            //解决了code first 自动生成主键的级联的问题
+            modelBuilder.Entity<PermissList>().ToTable("PermissList")
+                .HasOne(p => p.Menu)
+                .WithMany(m => m.PermissList)
+                .HasForeignKey(p => p.MenuId)
+                .OnDelete(Microsoft.EntityFrameworkCore.Metadata.DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Role>().ToTable("Role")
                 .HasOne(r => r.KeyValue)
@@ -59,9 +66,16 @@ namespace Dream.EntityFrameworkCore
 
             modelBuilder.Entity<User>().ToTable("User");
             modelBuilder.Entity<UserInfo>().ToTable("UserInfo");
+
+            modelBuilder.Entity<UserManageInfo>().ToTable("UserManageInfo")
+               .HasOne(u => u.OrganStruct1)
+               .WithMany(o => o.UserManageInfo1)
+               .HasForeignKey(u => u.WorkGroupId)
+               .OnDelete(Microsoft.EntityFrameworkCore.Metadata.DeleteBehavior.Restrict);
+
             modelBuilder.Entity<UserManageInfo>().ToTable("UserManageInfo")
                 .HasOne(u => u.OrganStruct2)
-                .WithMany(o => o.UserManageInfo)
+                .WithMany(o => o.UserManageInfo2)
                 .HasForeignKey(u => u.WorkGroupId)
                 .OnDelete(Microsoft.EntityFrameworkCore.Metadata.DeleteBehavior.Restrict);
 
@@ -73,7 +87,11 @@ namespace Dream.EntityFrameworkCore
 
             modelBuilder.Entity<UserManageInfoRole>().ToTable("UserManageInfoRole");
 
-            modelBuilder.Entity<WorkFlowProcess>().ToTable("WorkFlowProcess");
+            modelBuilder.Entity<WorkFlowProcess>().ToTable("WorkFlowProcess")
+                .HasOne(w => w.KeyValue)
+                .WithMany(k => k.WorkFolwProcess)
+                .HasForeignKey(w => w.WorkFlowRequestFormStatus)
+                .OnDelete(Microsoft.EntityFrameworkCore.Metadata.DeleteBehavior.Restrict);
 
             modelBuilder.Entity<WorkFlowRequestForm>().ToTable("WorkFlowRequestForm")
                 .HasOne(w => w.KeyValue1)

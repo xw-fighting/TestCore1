@@ -62,7 +62,7 @@ namespace Dream.Model.Models
         /// <summary>
         /// 与组织机构关联
         /// </summary>
-        public virtual OrganStruct OrganStruct { get; set; }
+        public virtual OrganStruct OrganStruct1 { get; set; }
         public virtual OrganStruct OrganStruct2 { get; set; }
         public virtual OrganStruct OrganStruct3 { get; set; }
 

@@ -28,7 +28,7 @@ namespace Dream.Model.Models
         [MaxLength(40)]
         [Required]
         public string Priority { get; set; }
-        [MaxLength(2)]
+        [MaxLength(40)]
         [Required]
         public string Status { get; set; }
         [MaxLength(140)]

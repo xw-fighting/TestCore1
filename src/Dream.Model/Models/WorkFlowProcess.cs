@@ -15,9 +15,9 @@ namespace Dream.Model.Models
         [MaxLength(40)]
         [Required]
         public string Processor { get; set; }
-        [MaxLength(2)]
+        [MaxLength(40)]
         [Required]
-        public int WorkFlowRequestFormStatus { get; set; }
+        public string WorkFlowRequestFormStatus { get; set; }
         [MaxLength(240)]
         [Required]
         public string Description { get; set; }

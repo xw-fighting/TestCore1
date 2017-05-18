@@ -33,7 +33,8 @@ namespace Dream.Web
 
             services.AddDbContext<BaseDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")), ServiceLifetime.Scoped);
-            services.AddScoped<IMenuRepository, MenuRepository>();
+
+            //services.AddScoped<IMenuRepository, MenuRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,7 +61,7 @@ namespace Dream.Web
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-            DbInitializer.Initialize(context);
+            //DbInitializer.Initialize(context);
         }
 
     }

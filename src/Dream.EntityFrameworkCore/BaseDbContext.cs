@@ -28,7 +28,10 @@ namespace Dream.EntityFrameworkCore
         public DbSet<WorkFlowWorkBranch> WorkFlowWorkBranch { get; set; }
         public DbSet<WorkFlowWorkNodes> WorkFlowWorkNodes { get; set; }
 
-
+        protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
+        {
+            optionBuilder.UseSqlServer(@"Data Source = .; Database=CoreCrm; user id = sa;pwd=1qaz~xsw2");
+        }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

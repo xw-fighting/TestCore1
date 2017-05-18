@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{93A1914C-7239-4735-AFF5-1E48A8F4A6DD}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dream.Model", "src\Dream.Model\Dream.Model.csproj", "{94ADB983-1D03-4DAB-8B2B-CFC771FA493A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dream.EntityFrameworkCore", "src\Dream.EntityFrameworkCore\Dream.EntityFrameworkCore.csproj", "{95EE5BDC-467A-481F-80E7-8C8F64B546CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.EntityFrameworkCore.UnitOfWork", "src\Microsoft.EntityFrameworkCore.UnitOfWork\Microsoft.EntityFrameworkCore.UnitOfWork.csproj", "{C2DB0E5D-AAE6-46D1-9DEC-4E2D0AB440BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{95EE5BDC-467A-481F-80E7-8C8F64B546CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95EE5BDC-467A-481F-80E7-8C8F64B546CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95EE5BDC-467A-481F-80E7-8C8F64B546CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DB0E5D-AAE6-46D1-9DEC-4E2D0AB440BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DB0E5D-AAE6-46D1-9DEC-4E2D0AB440BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DB0E5D-AAE6-46D1-9DEC-4E2D0AB440BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DB0E5D-AAE6-46D1-9DEC-4E2D0AB440BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +61,6 @@ Global
 		{0E8CD086-2DA3-40C3-9F20-825AA9540E6B} = {93A1914C-7239-4735-AFF5-1E48A8F4A6DD}
 		{94ADB983-1D03-4DAB-8B2B-CFC771FA493A} = {93A1914C-7239-4735-AFF5-1E48A8F4A6DD}
 		{95EE5BDC-467A-481F-80E7-8C8F64B546CD} = {93A1914C-7239-4735-AFF5-1E48A8F4A6DD}
+		{C2DB0E5D-AAE6-46D1-9DEC-4E2D0AB440BD} = {93A1914C-7239-4735-AFF5-1E48A8F4A6DD}
 	EndGlobalSection
 EndGlobal

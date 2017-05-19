@@ -30,7 +30,7 @@ namespace Dream.EntityFrameworkCore
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
         {
-            optionBuilder.UseSqlServer(@"Data Source = .; Database=CoreCrm; user id = sa;pwd=1qaz~xsw2");
+            optionBuilder.UseSqlServer(@"Data Source = .; Database=CoreCrm; user id = sa;pwd=xiaowei ");
         }
 
 

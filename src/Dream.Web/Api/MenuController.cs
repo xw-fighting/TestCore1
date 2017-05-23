@@ -23,5 +23,11 @@ namespace Dream.Web.Api
         {
             return MenuRepository.QueryWhere(c => true);
         }
+
+        public bool Add(Menu model)
+        {
+            MenuRepository.Add(model);
+            return true;
+        }
     }
 }

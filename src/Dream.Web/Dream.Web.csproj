@@ -1892,8 +1892,6 @@
     <Content Include="wwwroot\assets\scripts\ui-nouisliders.js" />
     <Content Include="wwwroot\assets\scripts\ui-toastr.js" />
     <Content Include="wwwroot\assets\scripts\ui-tree.js" />
-    <Content Include="wwwroot\images\0.jpg" />
-    <Content Include="wwwroot\images\logo-1.png" />
     <Content Include="wwwroot\js\menu.js" />
     <Content Include="wwwroot\lib\font-awesome\css\font-awesome.css" />
     <Content Include="wwwroot\lib\font-awesome\css\font-awesome.min.css" />
@@ -1928,9 +1926,12 @@
   <ItemGroup>
     <Folder Include="Api\" />
     <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\Menu\" />
-    <Folder Include="Areas\System\" />
+    <Folder Include="Areas\Admin\Views\Home\" />
+    <Folder Include="Areas\System\Views\Menu\" />
+    <Folder Include="Areas\System\Models\" />
+    <Folder Include="Areas\System\Views\UserManage\" />
     <Folder Include="wwwroot\assets\plugins\jquery-file-upload\server\php\files\thumbnail\" />
   </ItemGroup>
 

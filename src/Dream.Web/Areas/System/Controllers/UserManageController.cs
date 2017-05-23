@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Dream.Web.Areas.Admin.Controllers
+namespace Dream.Web.Areas.System.Controllers
 {
-    public class MenuController : BaseController
+    public class UserManageController : BaseController
     {
         public IActionResult Index()
         {

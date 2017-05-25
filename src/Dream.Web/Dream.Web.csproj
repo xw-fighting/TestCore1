@@ -1892,6 +1892,7 @@
     <Content Include="wwwroot\assets\scripts\ui-nouisliders.js" />
     <Content Include="wwwroot\assets\scripts\ui-toastr.js" />
     <Content Include="wwwroot\assets\scripts\ui-tree.js" />
+    <Content Include="wwwroot\data\objects.txt" />
     <Content Include="wwwroot\js\menu.js" />
     <Content Include="wwwroot\lib\font-awesome\css\font-awesome.css" />
     <Content Include="wwwroot\lib\font-awesome\css\font-awesome.min.css" />

@@ -35,6 +35,7 @@ namespace Dream.Web
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")), ServiceLifetime.Scoped);
 
             services.AddScoped<IMenuRepository, MenuRepository>();
+            services.AddScoped< IUserManageInfoRepository ,UserManageInfoRepository> (); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

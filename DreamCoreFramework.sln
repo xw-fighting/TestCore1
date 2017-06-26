@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dream.EntityFrameworkCore",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.EntityFrameworkCore.UnitOfWork", "src\Microsoft.EntityFrameworkCore.UnitOfWork\Microsoft.EntityFrameworkCore.UnitOfWork.csproj", "{C2DB0E5D-AAE6-46D1-9DEC-4E2D0AB440BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asp.net.core.Test", "test\asp.net.core.Test\asp.net.core.Test.csproj", "{A486063D-07AF-4D8F-981B-504FBF409B55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{C2DB0E5D-AAE6-46D1-9DEC-4E2D0AB440BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2DB0E5D-AAE6-46D1-9DEC-4E2D0AB440BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2DB0E5D-AAE6-46D1-9DEC-4E2D0AB440BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A486063D-07AF-4D8F-981B-504FBF409B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A486063D-07AF-4D8F-981B-504FBF409B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A486063D-07AF-4D8F-981B-504FBF409B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A486063D-07AF-4D8F-981B-504FBF409B55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +68,6 @@ Global
 		{94ADB983-1D03-4DAB-8B2B-CFC771FA493A} = {93A1914C-7239-4735-AFF5-1E48A8F4A6DD}
 		{95EE5BDC-467A-481F-80E7-8C8F64B546CD} = {93A1914C-7239-4735-AFF5-1E48A8F4A6DD}
 		{C2DB0E5D-AAE6-46D1-9DEC-4E2D0AB440BD} = {93A1914C-7239-4735-AFF5-1E48A8F4A6DD}
+		{A486063D-07AF-4D8F-981B-504FBF409B55} = {3939588C-9287-4D79-88AB-43AB698E3599}
 	EndGlobalSection
 EndGlobal
